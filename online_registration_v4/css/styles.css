@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 /*____ ****Main Layout**** ____ */
 
@@ -19,19 +22,22 @@ main {
     padding: 15px 0 15px;
 }
 
-.intro {
-    text-align: center;
-    padding: 16px 0 26px;
-    border-bottom: 2px solid #274258;   
-}
-
-.intro p {
-    color: #969798;
-}
-
 h1,
 legend {
   font-family: 'Merriweather', serif;
+}
+
+.intro {
+    text-align: center;
+    padding: 16px 0 20px;   
+}
+
+.intro p {
+    color: #7f8081;
+}
+
+p {
+    margin: 0 0 15px ;
 }
 
 /* ____ ****Form First Field**** ____ */
@@ -39,6 +45,21 @@ legend {
 .flex-set {
     display: flex;
     flex-direction: column;
+    margin-bottom: 12px;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    background-color: rgb(249, 255, 255);
+}
+
+input:focus,
+.stateselect:focus,
+textarea:focus {
+    background-color: rgb(249, 255, 255);
+    border: 2px solid rgb(26, 167, 155);
+    border-radius: 5px;
 }
 
 legend {
@@ -47,13 +68,94 @@ legend {
      padding: 20px 0 20px;
 }
 
+.contact {
+    width: 100%;
+    padding-top: 25px;
+    border-top: 2px solid #274258;
+}
+
 fieldset {
     border: none;
 }
 
+input,
+textarea,
+#state {
+    padding: 12px;
+    margin: 5px 0 5px;
+    background: white;
+    border: none;
+    box-shadow: inset 5px 5px 10px rgba(0,7,36,.2);
+    border-radius: 5px;   
+}
+
+input::placeholder {
+    text-align: right;
+    font-style: italic;
+    font-size: 15px;
+    opacity: .5;
+}
+
+#zip {
+  max-width: 50%;
+}
+
 /* ____ ****Form Second Field**** ____ */
 
+.newsletter {
+    width: 100%;
+    border-top: 2px solid #274258; 
+}
 
+.container {
+    padding: 7px 0 7px 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.nlformat {
+    margin-top: 15px;
+}
+
+textarea {
+    margin-top: 10px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.boxes {
+    box-shadow: none;
+}
+
+.button {
+    margin: 0 15px;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 23px;
+    background: #1CB1A7;
+    color: white;
+    box-shadow: 5px 5px 8px rgba(0,7,36,.4);
+    cursor: pointer;
+}
+
+/* ____ ****Footer**** ____ */
+
+footer {
+    text-align: center;
+    margin: 30px 0 100px;
+    font-style: italic;
+    color: #7f8081;
+    
+}
 
 /* ____ ****Media Querie @ 768px**** ____ */
 
