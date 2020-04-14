@@ -8,7 +8,7 @@
 body {
   font-family: 'Muli', sans-serif;
   margin: 0 auto;
-  background: #EFF4F9;  
+  background: rgb(227, 239, 250); 
 }
 
 main {
@@ -39,7 +39,7 @@ legend {
 }
 
 p {
-    margin: 0 0 15px ;
+    margin: 0 auto;
 }
 
 .thick {
@@ -53,7 +53,13 @@ p {
     border: 1px solid #274258;
 }
 
+.main-form,
+.secondary-form {
+    background: #EFF4F9;
+}
+
 /* ____ ****Form First Field**** ____ */
+
 
 .flex-set {
     display: flex;
@@ -70,9 +76,10 @@ textarea:hover {
 input:focus,
 .stateselect:focus,
 textarea:focus {
-    background-color: rgb(249, 255, 255);
+    background-color: rgb(227, 255, 255);
     border: 1px solid rgb(11, 21, 110);
     border-radius: 5px;
+    transition: background-color 3s;
 }
 
 legend {
@@ -93,7 +100,7 @@ textarea,
     background: white;
     border: none;
     box-shadow: inset 5px 5px 10px rgba(0,7,36,.2);
-    border-radius: 5px;   
+    border-radius: 5px;  
 }
 
 input::placeholder {
@@ -109,6 +116,10 @@ input::placeholder {
 
 /* ____ ****Form Second Field**** ____ */
 
+.secondary-form {
+    padding-bottom: 30px;
+}
+
 .newsletter {
     width: 100%;
     border-top: 2px solid #274258; 
@@ -122,11 +133,6 @@ input[type="checkbox"],
 input[type="radio"] {
     margin-right: 10px;
     margin-bottom: 15px;
-}
-
-.nlformat,
-input[value="news"] {
-    margin-top: 15px;
 }
 
 textarea {
@@ -146,6 +152,7 @@ textarea {
 button {
     width: 100%;
     padding: 20px;
+    margin-top: 10px;
     border: none;
     border-radius: 5px;
     font-size: 23px;
