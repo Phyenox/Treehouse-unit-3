@@ -29,15 +29,27 @@ legend {
 
 .intro {
     text-align: center;
-    padding: 16px 0 20px;   
+    padding: 16px 0 0;   
 }
 
 .intro p {
+    padding-bottom: 20px;
     color: #7f8081;
 }
 
 p {
     margin: 0 0 15px ;
+}
+
+.thick {
+    margin-bottom: -5px;
+    width: 95%;
+    border: 2.5px solid #274258;
+}
+
+.thin {
+    width: 95%;
+    border: 1px solid #274258;
 }
 
 /* ____ ****Form First Field**** ____ */
@@ -58,20 +70,14 @@ input:focus,
 .stateselect:focus,
 textarea:focus {
     background-color: rgb(249, 255, 255);
-    border: 2px solid rgb(26, 167, 155);
+    border: 1px solid rgb(11, 21, 110);
     border-radius: 5px;
 }
 
 legend {
      font-weight: 700;
      font-size: 20px;
-     padding: 20px 0 20px;
-}
-
-.contact {
-    width: 100%;
-    padding-top: 25px;
-    border-top: 2px solid #274258;
+     padding: 30px 0 20px;
 }
 
 fieldset {
@@ -161,5 +167,21 @@ footer {
 
 @media (min-width: 768px) {
 
+    .flex-set {      
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;    
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 80%;
+    }  
     
+    #zip {
+        align-items: flex-start;
+        max-width: 25%;
+    }
 }
