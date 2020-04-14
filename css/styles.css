@@ -53,8 +53,7 @@ p {
     border: 1px solid #274258;
 }
 
-.main-form,
-.secondary-form {
+form {
     background: #EFF4F9;
 }
 
